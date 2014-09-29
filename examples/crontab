@@ -1,0 +1,1 @@
+00 02 *  *  *  SOURCE_HOST=host.com backup omni # runs the backup for omni every day at 2:00 am, using host.com
