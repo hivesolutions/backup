@@ -1,0 +1,3 @@
+00 03 *  *  *  /usr/bin/rsnapshot daily
+00 03 *  *  07 /usr/bin/rsnapshot weekly
+00 03 01 *  *  /usr/bin/rsnapshot monthly
