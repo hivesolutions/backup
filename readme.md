@@ -4,7 +4,7 @@ Set of backups tools/scripts to be used internally.
 
 ## Snapshots
 
-In order to use snapshots the [rsnapshot](http://www.rsnapshot.org/) utility should be isntalled/used changing the
+In order to use snapshots the [rsnapshot](http://www.rsnapshot.org/) utility should be installed/used changing the
 configuration file `/etc/rsnapshot.conf` so that includes a reference to the `/backups` directory using:
 
     backup    /backups/        localhost/
