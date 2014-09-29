@@ -13,6 +13,6 @@ Please notice that the spaces between strings is made using tabs and not spaces.
 
 To be able to execute the rsnapshot properly the proper cron strings should be added to the `/etc/crontab` file:
 
-    00 03 *  *  *  /usr/bin/rsnapshot daily
-    00 03 *  *  07 /usr/bin/rsnapshot weekly
-    00 03 01 *  *  /usr/bin/rsnapshot monthly
+    00 03 *  *  *  root /usr/bin/rsnapshot daily
+    00 03 *  *  07 root /usr/bin/rsnapshot weekly
+    00 03 01 *  *  root /usr/bin/rsnapshot monthly
