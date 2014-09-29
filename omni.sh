@@ -10,6 +10,4 @@ set -e +h
 
 source $DIR/config.sh
 
-mkdir -p $TARGET_DIR/mysql && rsync -azh --progress --delete root@$SOURCE_HOST:/data/mysql/ $TARGET_DIR/mysql
-
-mkdir -p $TARGET_DIR/fs && rsync -azh --progress --delete root@$SOURCE_HOST:/data/mysql/ $TARGET_DIR/mysql
+mkdir -p $TARGET_DIR/data && rsync -azh --progress --delete root@$SOURCE_HOST:/data/ $TARGET_DIR/data
