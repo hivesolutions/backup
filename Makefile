@@ -1,8 +1,10 @@
+prefix = /usr
+
 install:
-	mkdir -p /usr/backup
-	rm -rf /usr/backup/scripts && cp -rp scripts /usr/backup
-	rm -f /usr/bin/backup && ln -s /usr/backup/scripts/backup /usr/bin/backup
+	mkdir -p $(prefix)/backup && mkdir -p $(prefix)/bin
+	rm -rf $(prefix)/backup/scripts && cp -rp scripts $(prefix)/backup
+	rm -f $(prefix)/bin/backup && ln -s $(prefix)/backup/scripts/backup $(prefix)/bin/backup
 
 uninstall:
-	rm -rf /usr/backup/scripts
-	rm -f /usr/bin/backup
+	rm -rf $(prefix)/backup/scripts
+	rm -f $(prefix)/bin/backup
